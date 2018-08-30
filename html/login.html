@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+	<div class="top">
+		<span></span>
+		<div>依《网络安全法》相关要求，即日起美丽说会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</div>
+	</div>
+	<div class="main">
+		<div class="mylogin">
+			            <ul>
+                      <li class="current myli1">普通登陆</li>
+                      <li class="myli2">手机无密码登陆</li> 
+                  </ul>
+			           <div class="box1">
+                    <input type="text" placeholder="用户名/邮箱/手机号">  
+                    <input type="password" placeholder="密码" maxlength="32" data-type=loginpassword" name="pass" value="" style="border-color:#CFCFCF;">
+                    <span></span>
+                    <a href="../home.html">
+                    <button>登陆</button>
+                    </a>
+                    <p class="p1">
+                         <span>
+                         <svg class="icon" aria-hidden="true">
+                         <use xlink:href="#icon-weixin"></use>
+                         </svg>
+                         </span>
+                         <a>微信登陆</a>
+                    </p>
+                    <p class="p2">
+                          <a href="" class="freelogin">免费注册</a>
+                          <a href="" >忘记密码</a>
+                    </p>
+                  </div>
+
+                  <div class="box2">
+                    <input type="text" placeholder="用户名/邮箱/手机号" class="input1">  
+                    <div class="wrap">
+                        <button class="bu1">获取动态密码</button>
+                        <input type="text" placeholder="动态密码" class="input2">   
+                    </div>
+                    <a href="../home.html">
+                      <button class="bu2">登陆</button>
+                    </a>
+                    <p class="p1">
+                         <span>
+                         <svg class="icon" aria-hidden="true">
+                         <use xlink:href="#icon-weixin"></use>
+                         </svg>
+                         </span>
+                         <a>微信登陆</a>
+                    </p>
+                    <p class="p2">
+                          <a href="" class="freelogin">免费注册</a>
+                          <a href="" >忘记密码</a>
+                    </p>
+                  </div>
+		</div>
+	</div>
+    <!-- 底部 -->
+      <div class="bottom">
+      	<div class="bottom-l">
+      		<ul class="l-1">
+      			<li>买家帮助</li>
+      			<li>商家帮助</li>
+      			<li>关于我们</li>
+      			<li>关注我们</li>
+      		</ul>
+      		<div>
+      		<ul class="l-2">
+      			<li>新手指南</li>
+      			<li>服务保障</li>
+      			<li>常见问题</li>
+      			<li>风险监测</li>
+      		</ul>
+      		<ul class="l-3">
+      			<li>供货商招募</li>
+      			<li>商家后台</li>
+      		</ul>
+      		<ul class="l-4">
+      			<li>关于美丽说</li>
+      			<li>联系我们</li>
+      		</ul>
+      		<ul class="l-5">
+      			<li><span id="span1"></span>新浪微博</li>
+      			<li><span id="span2"></span>QQ空间</li>
+      			<li><span id="span3"></span>腾讯微博</li>
+      		</ul>
+      		</div>
+      	</div>
+      	<div class="bottom-r">
+      		<ul>
+      			<li>美丽说微信服务号</li>
+      			<li>美丽说客户端下载</li>
+      		</ul>
+      		<img src="../images/bottom-1.jpg" alt="">
+      		<img src="../images/bottom-2.png" alt="">
+      	</div>
+      	<div class="bottom-m">
+      		<p>Copyright ©2017 Meilishuo.com  电信与信息服务业务经营许可证100798号 经营性网站备案信息 </p>
+      		<p>京ICP备11031139号  京公网安备110108006045   客服电话：400-8158-666  文明办网文明上网举报电话：010-82615762  违法不良信息举报中心</p>
+      	</div>
+      </div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../font/iconfont.js"></script>
+<script>
+      $('.myli1').click(function(event) {
+                  $('.myli1').addClass('current');
+                  $('.myli1').siblings().removeClass('current');
+                  $('.mylogin .box1').show();
+                  $('.mylogin .box2').hide();
+      });
+      $('.myli2').click(function(event) {
+                  $('.myli2').addClass('current');
+                  $('.myli2').siblings().removeClass('current');
+                  $('.mylogin .box2').show();
+                  $('.mylogin .box1').hide();
+      });
+</script>
+</body>
+</html>
